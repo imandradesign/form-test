@@ -10,6 +10,10 @@
   display: none;
 }
 
+// #thank-you {
+  display: none;
+}
+
 body {
   max-width: 800px;
   margin-left: 25%;
@@ -18,4 +22,29 @@ body {
 #form-name, #page-name, #form-exclaim {
   text-align: center;
   padding-top: 50px;
+}
+
+#city {
+  max-width: 200px;
+}
+
+#state, #zip-code {
+  max-width: 100px;
+}
+
+form {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#clown-header {
+  text-align: center;
+}
+
+#clown-img {
+  padding: 50px;
+}
+
+.row {
+  margin-left:50%;
 }

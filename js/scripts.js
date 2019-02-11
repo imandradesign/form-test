@@ -40,4 +40,25 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
+
+
+  $("#order-form form").submit(function(event) {
+    var firstNameInput = $("input#first-name").val();
+    var lastNameInput = $("input#last-name").val();
+    var streetAddressInput= $("input#street-address").val();
+    var cityInput = $("input#city").val();
+    var stateInput = $("input#state").val();
+    var zipCodeInput = $("input#zip-code").val();
+
+    $(".first-name").text(firstNameInput);
+    $(".last-name").text(lastNameInput);
+    $(".street-address").text(streetAddressInput);
+    $(".city").text(cityInput);
+    $(".state").text(stateInput);
+    $(".zip-code").text(zipCodeInput);
+
+    $("#thank-you").show();
+
+    event.preventDefault();
+  });
 });
