@@ -5,3 +5,17 @@
 #story {
   display: none;
 }
+
+#exclamation {
+  display: none;
+}
+
+body {
+  max-width: 800px;
+  margin-left: 25%;
+}
+
+#form-name, #page-name, #form-exclaim {
+  text-align: center;
+  padding-top: 50px;
+}

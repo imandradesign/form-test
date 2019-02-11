@@ -19,12 +19,24 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
+
   $("#form-name form").submit(function(event) {
-    var name1Input = $("input#name1").val();
+    var name1Input = $("input#name1").val().charAt(0).toUpperCase() + $("input#name1").val().slice(1);
 
     $(".name1").text(name1Input);
 
     $("#letter").show();
+
+    event.preventDefault();
+  });
+
+
+  $("#form-exclaim form").submit(function(event) {
+    var phraseInput = $("input#phrase").val().toUpperCase()
+
+    $(".phrase").text(phraseInput);
+
+    $("#exclamation").show();
 
     event.preventDefault();
   });
