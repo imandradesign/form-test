@@ -10,7 +10,7 @@
   display: none;
 }
 
-// #thank-you {
+ #thank-you {
   display: none;
 }
 
@@ -43,8 +43,4 @@ form {
 
 #clown-img {
   padding: 50px;
-}
-
-.row {
-  margin-left:50%;
 }

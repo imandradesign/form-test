@@ -41,13 +41,16 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
+  //var fullNameInput = $("input#first-name").val() + " " + $("input#last-name").val();
+  //var fullAddressInput= $("input#street-address").val() + " " + $("input#city").val() + ", " + $("input#state").val() + " " + $("input#zip-code").val();
+
 
   $("#order-form form").submit(function(event) {
-    var firstNameInput = $("input#first-name").val();
-    var lastNameInput = $("input#last-name").val();
+    var firstNameInput = $("input#first-name").val().charAt(0).toUpperCase() + $("input#first-name").val().slice(1);
+    var lastNameInput = $("input#last-name").val().charAt(0).toUpperCase() + $("input#last-name").val().slice(1);
     var streetAddressInput= $("input#street-address").val();
-    var cityInput = $("input#city").val();
-    var stateInput = $("input#state").val();
+    var cityInput = $("input#city").val().charAt(0).toUpperCase() + $("input#city").val().slice(1);
+    var stateInput = $("input#state").val().toUpperCase();
     var zipCodeInput = $("input#zip-code").val();
 
     $(".first-name").text(firstNameInput);
